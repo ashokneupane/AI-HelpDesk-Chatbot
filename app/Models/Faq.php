@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Faq extends Model
 {
-    protected $fillable = ['intent','account_type','answer'];
+    protected $fillable = ['category','issue_type','system','platform','response_text','reset_url','requires_ticket'];
 }

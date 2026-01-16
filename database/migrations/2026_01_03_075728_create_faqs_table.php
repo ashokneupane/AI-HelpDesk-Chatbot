@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
-            $table->string('intent');
-            $table->string('account_type')->nullable();
-            $table->longtext('answer');
+            $table->string('category')->nullable();
+            $table->string('issue_type')->nullable();
+            $table->string('system')->nullable();
+            $table->string('platform')->nullable();
+            $table->longtext('response_text');
+            $table->string('reset_url')->nullable();
+            $table->string('requires_ticket')->nullable();
             $table->timestamps();
         });
     }

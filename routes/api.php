@@ -3,9 +3,8 @@
 use App\Http\Controllers\DialogFlowController;
 use Illuminate\Support\Facades\Route;
 
-// Route::post(uri: '/dialogflow-webhook', [DialogFlowController::class, 'handle']);
+Route::post('/dialogflow-webhook', [DialogFlowController::class, 'handle']);
 
-Route::get('/dialogflow-webhook', function(){
-    return 'hello';
-});
+// Route::post('/dialogflow-webhook', [DialogFlowController::class, 'handle']);
+
 

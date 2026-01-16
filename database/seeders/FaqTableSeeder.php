@@ -15,19 +15,11 @@ class FaqTableSeeder extends Seeder
     {
         $data  = [
         [
-            'intent' => 'password_reset',
-            'account_type' => 'email',
-            'answer' => 'Reset your email password at https://reset.company.com',
-        ],
-         [
-            'intent' => 'password_reset',
-            'account_type' => 'vpn',
-            'answer' => 'Reset VPN password via IT portal',
-        ],
-         [
-            'intent' => 'account_locked',
-            'account_type' => null,
-            'answer' => 'Wait 15 minutes or contact IT',
+            'category' => 'password',
+            'issue_type' => 'reset',
+            'system' => 'email',
+            'platform' => 'outlook',
+            'response_text' => 'Reset your email password at https://reset.company.com',
         ],
     ];
 
