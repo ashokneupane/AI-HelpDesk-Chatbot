@@ -92,8 +92,8 @@
 <!-- DIALOGFLOW CHATBOT -->
 <df-messenger
     location="australia-southeast1"
-    project-id="ai-helpdesk-chatbot-483005"
-    agent-id="7f828158-fc06-4ec9-a418-4883ed22c4a9"
+    project-id={{ env('DIALOGFLOW_PROJECT_ID') }}
+    agent-id="{{ env('DIALOGFLOW_AGENT_ID') }}"
     language-code="en"
     max-query-length="-1">
 
